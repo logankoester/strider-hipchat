@@ -1,0 +1,31 @@
+{
+  "name": "strider-hipchat",
+  "version": "0.0.0",
+  "description": "A Strider CD Plugin to notify Hipchat of project build status",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logankoester/strider-hipchat.git"
+  },
+  "keywords": [
+    "strider",
+    "ci",
+    "tests",
+    "testing",
+    "deployment",
+    "continuous",
+    "integration",
+    "continuous",
+    "deployment",
+    "hipchat",
+    "plugin"
+  ],
+  "author": "Logan Koester",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/logankoester/strider-hipchat/issues"
+  }
+}
