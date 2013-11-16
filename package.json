@@ -2,7 +2,7 @@
   "name": "strider-hipchat",
   "version": "0.0.0",
   "description": "A Strider CD Plugin to notify Hipchat of project build status",
-  "main": "index.js",
+  "main": "lib/worker.js",
   "scripts": {
     "test": "grunt test"
   },
@@ -27,5 +27,15 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/logankoester/strider-hipchat/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-bump": "0.0.11",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-nodeunit": "~0.2.2",
+    "grunt-jade": "~0.4.0",
+    "marked": "~0.2.10"
   }
 }

@@ -1,0 +1,77 @@
+html
+  body
+    #hipchat.tab-pane.well
+      fieldset
+        legend Hipchat
+        p
+          :markdown
+            Configure your [Hipchat](http://hipchat.com) account and message notifications to send on build events.
+
+            A Hipchat group admin must [generate an authToken](https://hipchat.com/admin/api) to use.
+            
+            You can find the **numeric** room id for a given room by following [these links](https://hipchat.com/rooms).
+
+        table.table
+          thead
+            tr
+              th Auth Token
+              th Room ID
+              th Send From
+          tbody
+            tr
+              td
+                input(type='text', ng-model='authToken', placeholder='')
+              td
+                input(type='text', ng-model='roomId', placeholder='')
+              td
+                input(type='text', ng-model='from', placeholder='Strider')
+              td
+                button.btn(ng-click='testMessage()') Test Message
+
+        table.table
+          thead
+            tr
+              th Event
+              th Color
+              th Message
+          tbody
+            tr
+              td
+                strong Start
+              td
+                input(type='text', ng-model='startColor', placeholder='purple')
+              td
+                input(type='text', ng-model='startMessage', placeholder='Job started...')
+
+        table.table
+          thead
+            tr
+              th Event
+              th Color
+              th Message
+          tbody
+            tr
+              td
+                strong Pass
+              td
+                input(type='text', ng-model='passColor', placeholder='purple')
+              td
+                input(type='text', ng-model='passMessage', placeholder='Job started...')
+
+        table.table
+          thead
+            tr
+              th Event
+              th Color
+              th Message
+          tbody
+            tr
+              td
+                strong Failure
+              td
+                input(type='text', ng-model='failColor', placeholder='purple')
+              td
+                input(type='text', ng-model='failMessage', placeholder='Job started...')
+
+
+        button.btn.btn-success(ng-click='saveOptions()') Save notifications
