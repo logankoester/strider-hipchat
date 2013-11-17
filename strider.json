@@ -3,14 +3,11 @@
   "title": "Hipchat",
   "icon": "icon.png",
   "type": "job",
-  "webapp": "lib/worker.js",
-  "worker": "lib/webapp.js",
-  "templates": {
-  },
+  "webapp": "lib/webapp.js",
+  "worker": "lib/worker.js",
   "config": {
     "controller": "HipchatController",
     "script": "config/config.js",
-    "style": "config/config.css",
     "template": "config/config.html"
   }
 }
